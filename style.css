@@ -150,7 +150,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -197,6 +196,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem; /* Ajout de marge en bas */
 }
 
 #socials-container {
@@ -265,6 +265,9 @@ section {
 
 #about {
   position: relative;
+  padding-top: 0rem; 
+  padding-bottom: 2rem; 
+  margin-bottom: 4rem; 
 }
 
 .about-containers {
@@ -318,6 +321,8 @@ section {
 
 #experience {
   position: relative;
+  padding-bottom: 4vh;
+  margin-bottom: 4vh;
 }
 
 .experience-sub-title {
@@ -331,7 +336,9 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
+
 
 .article-container {
   display: flex;
@@ -357,6 +364,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-top: 4vh;
 }
 
 .color-container {

@@ -1,18 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amine's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="images/icone.ico" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">DEMIGHA Amine</div>
-      <div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="images/icone.ico" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">DEMIGHA Amine</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">DEMIGHA Amine</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./images/dev.webp" alt="Dev's picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hi<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" />, I'm</p>
+      <h1 class="title">DEMIGHA Amine</h1>
+      <p class="section__text__p2">a Full-Stack Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./images/CV_DEMIGHA.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./images/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="window.open('https://linkedin.com/in/demigha-amine-8a395318a', '_blank')"
+        />
+        <img
+          src="./images/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="window.open('https://github.com/demigha-amine', '_blank')"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./images/fullstack.webp"
+          alt="fullstack picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./images/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>Junior<br />Full-Stack Development</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./images/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Masters Degree<br />in Software Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>             
+            As a Full Stack Developer, I specialize in Java, PHP, and JavaScript, utilizing 
+            frameworks like Spring Boot, Node.js, and PHP for backend development, and React and 
+            Angular for frontend. My expertise enables me to create robust, scalable architectures 
+            and dynamic, visually appealing user interfaces. Committed to continuous learning and 
+            best practices, I deliver innovative, high-performance solutions tailored to project needs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./images/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">“TAX Projet”</br> BNP PARIBAS CIB2S</h2>
+          <div class="article-container">
+            <p>I integrated into a team for three applications: Taxation [TAXMART], Corporate Actions [CRP], and Carbon Footprint [GHG]. My tasks included:<br>
+              • Frontend : new fields and values to be added in the screen, creation of list and details pages, filters, and manage json data.<br>
+              • Frontend and backend: bug fixes.<br>
+              • Backend : code refactoring.<br>
+              • Database : columns parametrization.<br>
+              • Bug fixing on both the frontend and backend.<br>
+              • Tests : cucumber and SWIFT messages integration in UAT environment.<br>
+            I worked in an Agile Scrum environment, utilizing technologies such as Angular 17, 
+            Java Springboot v3, RestAPI, EAI, Sybase ASE, Gradle, IntelliJ, DBeaver, 
+            GitLab, Jenkins and Jira.
+           </p>
+                                
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <!-- Ajouter les images des technologies utilisées -->
+             
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" alt="Angular" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original-wordmark.svg" alt="Spring Boot" width="80" height="80"/>
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gradle.svg" alt="Gradle" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/intellij/intellij-original.svg" alt="IntelliJ" width="80" height="80"/>
+            <img src="https://www.vectorlogo.zone/logos/sap/sap-ar21.svg" alt="Sybase ASE" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dbeaver/dbeaver-original.svg" alt="DBeaver" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="Swift" width="80" height="80"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg" alt="Cucumber" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jira/jira-original.svg" alt="Jira" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="80" height="80"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/scrum-1.svg" alt="Scrum" width="80" height="80"/>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">“MerNaAm Shop” </br>e-commerce application</h2>
+          <div class="article-container">
+            <p>            
+              Between December 2023 and March 2024, I contributed to the design and development of 
+              "MerNaAm Shop," an e-commerce application that allows users to buy and sell items online. 
+              To successfully complete this project, I employed a technology stack including ReactJS, 
+              NodeJS, ExpressJS, Redux Toolkit, and Bootstrap, along with MongoDB for data management.
+            </p>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="80" height="80"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" alt="git" width="80" height="80"/>         
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original-wordmark.svg" alt="vscode" width="80" height="80"/>
+          </div>
+        </div>
+      </div>
+      <!-- Nouveau conteneur pour une autre expérience -->
+
+    </div>
+    <img
+      src="./images/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#projects'"
+    />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Web Platform</h2>
+          <div class="article-container">
+            <p>
+              I contributed to the creation of a web platform for managing educational programs. 
+              This project involved studying, designing, and developing tools for centralized 
+              educational management. My work focused on the assignment of teachers and scheduling 
+              of educational programs, ensuring optimal resource management and academic activities. 
+              Technically, the project was built using HTML5, CSS3, Bootstrap, JavaScript, PHP, and 
+              MySQL, providing a solid and flexible foundation for all required functionalities.
+            </p> </br>
+          </div>
+          
+          <div class="btn-container">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="60" height="60"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="60" height="60"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="60" height="60"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" height="60"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="60" height="60"/>
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="60" height="60"/>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Transport-Based Coverage in IoT Architecture</h2>
+          <div class="article-container">
+            <p>
+              Implement a solution to maximize coverage of a region 
+              and solve the problem of sensor relocation 
+              redundant systems in wireless sensor and robot networks in 
+              IoT (Internet of Things) architecture in Python. 
+              Technical Environment: Python turtle, IOT.
+            </p> </br>
+          </div>
+          
+          <div class="btn-container">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="60" height="60"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original-wordmark.svg" alt="PyCharm" width="100" height="100"/>
+            
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Big Data & AI</h2>
+          <div class="article-container">
+            <ul>
+              <li>
+                Parallelization and Performance Analysis for Join Algorithms by similarity to Spark and 
+                Hadoop
+              </li>
+              <li>
+                Clustering Practice Lab
+              </li>
+              <li>
+                Binary Classification
+              </li>
+              <li>
+                Object Detection using MRCNN
+              </li>
+              <li>
+                Technical Environment: Spark (Pyspark), Hadoop, 
+                Python, numpy, pandas, mrcnn, tensorflow keras.
+              </li>
+            </ul>
+            <p>
+       
+            </p>
+       </br>
+          </div>
+          
+          <div class="btn-container">
+              <!-- Python Logo -->
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="80" height="80"/>
+              <!-- Spark Logo -->
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original-wordmark.svg" alt="Apache Spark" width="100" height="100"/>
+              <!-- Hadoop Logo -->
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hadoop/hadoop-original-wordmark.svg" alt="Hadoop" width="100" height="100"/>
+              <!-- TensorFlow Logo -->
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original-wordmark.svg" alt="TensorFlow" width="100" height="100"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./images/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./images/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:demigha.amine24@gmail.com" target="_blank">Email</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./images/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://linkedin.com/in/demigha-amine-8a395318a" target='_blank'>LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -21,276 +326,7 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">DEMIGHA Amine</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./images/dev.webp" alt="Dev's picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hi<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" height="30px" />, I'm</p>
-        <h1 class="title">DEMIGHA Amine</h1>
-        <p class="section__text__p2">a Full-Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./images/CV_DEMIGHA.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./images/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://linkedin.com/in/demigha-amine-8a395318a', '_blank')"
-          />
-          <img
-            src="./images/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/demigha-amine', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./images/fullstack.webp"
-            alt="fullstack picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./images/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Junior<br />Full-Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./images/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Masters Degree<br />in Software Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>             
-              As a Full Stack Developer, I specialize in Java, PHP, and JavaScript, utilizing 
-              frameworks like Spring Boot, Node.js, and PHP for backend development, and React and 
-              Angular for frontend. My expertise enables me to create robust, scalable architectures 
-              and dynamic, visually appealing user interfaces. Committed to continuous learning and 
-              best practices, I deliver innovative, high-performance solutions tailored to project needs.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">“MerNaAm Shop” </br>e-commerce application</h2>
-            <div class="article-container">
-              <p>            
-                Between December 2023 and March 2024, I contributed to the design and development of 
-                "MerNaAm Shop," an e-commerce application that allows users to buy and sell items online. 
-                To successfully complete this project, I employed a technology stack including ReactJS, 
-                NodeJS, ExpressJS, Redux Toolkit, and Bootstrap, along with MongoDB for data management.
-              </p>
-            </div>
-          </div>
-          <div class="details-container">
-            <div class="article-container">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="80" height="80"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" alt="git" width="80" height="80"/>         
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original-wordmark.svg" alt="vscode" width="80" height="80"/>
-              
-            </div>
-          </div>
-  
-          
-        </div>
-      </div>
-                 
-      
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Web Platform</h2>
-            <div class="article-container">
-              <p>
-                I contributed to the creation of a web platform for managing educational programs. 
-                This project involved studying, designing, and developing tools for centralized 
-                educational management. My work focused on the assignment of teachers and scheduling 
-                of educational programs, ensuring optimal resource management and academic activities. 
-                Technically, the project was built using HTML5, CSS3, Bootstrap, JavaScript, PHP, and 
-                MySQL, providing a solid and flexible foundation for all required functionalities.
-              </p> </br>
-            </div>
-            
-            <div class="btn-container">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="60" height="60"/>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Transport-Based Coverage in IoT Architecture</h2>
-            <div class="article-container">
-              <p>
-                Implement a solution to maximize coverage of a region 
-                and solve the problem of sensor relocation 
-                redundant systems in wireless sensor and robot networks in 
-                IoT (Internet of Things) architecture in Python. 
-                Technical Environment: Python turtle, IOT.
-              </p> </br>
-            </div>
-            
-            <div class="btn-container">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="60" height="60"/>
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pycharm/pycharm-original-wordmark.svg" alt="PyCharm" width="100" height="100"/>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Big Data & AI</h2>
-            <div class="article-container">
-              <ul>
-                <li>
-                  Parallelization and Performance Analysis for Join Algorithms by similarity to Spark and 
-                  Hadoop
-                </li>
-                <li>
-                  Clustering Practice Lab
-                </li>
-                <li>
-                  Binary Classification
-                </li>
-                <li>
-                  Object Detection using MRCNN
-                </li>
-                <li>
-                  Technical Environment: Spark (Pyspark), Hadoop, 
-                  Python, numpy, pandas, mrcnn, tensorflow keras.
-                </li>
-              </ul>
-              <p>
-         
-              </p>
-         </br>
-            </div>
-            
-            <div class="btn-container">
-                <!-- Python Logo -->
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="80" height="80"/>
-                <!-- Spark Logo -->
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original-wordmark.svg" alt="Apache Spark" width="100" height="100"/>
-                <!-- Hadoop Logo -->
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hadoop/hadoop-original-wordmark.svg" alt="Hadoop" width="100" height="100"/>
-                <!-- TensorFlow Logo -->
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original-wordmark.svg" alt="TensorFlow" width="100" height="100"/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./images/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:demigha.amine24@gmail.com" target="_blank">Email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./images/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://linkedin.com/in/demigha-amine-8a395318a" target='_blank'>LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
